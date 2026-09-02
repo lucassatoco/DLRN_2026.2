@@ -398,7 +398,7 @@ uma pequena melhora.
 | 7  | Distance between centers — Dataset II | 0.2662 |
 | 8  | Explained variance PC1 + PC2 — Dataset I | 0.6597 (PC1 0.5004 + PC2 0.1593) |
 | 9  | Explained variance PC1 + PC2 — Dataset II | 0.4291 (PC1 0.2159 + PC2 0.2132) |
-| 10 | Share of the positive class in `Transported` | PREENCHER |
-| 11 | Mean and median of `FoodCourt` on the training set, before transforming | PREENCHER |
-| 12 | Final `shape` of the training feature matrix | PREENCHER |
-| 13 | Minimum and maximum of the training and test sets after scaling | PREENCHER |
+| 10 | Share of the positive class in `Transported` | 0.5036 |
+| 11 | Mean and median of `FoodCourt` on the training set, before transforming | 452.6112 | 0.000| 
+| 12 | Final `shape` of the training feature matrix | 6954, 17 |
+| 13 | Minimum and maximum of the training and test sets after scaling | -1.0000, 1.0000 | -1.0000, 1.1383 |
