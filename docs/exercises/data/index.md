@@ -276,10 +276,37 @@ ficam tratadas como categoricas.
 
 **Faltantes.** Nenhuma coluna esta gravemente danificada — todas ficam em torno de 2% —,
 mas os buracos estao espalhados por linhas diferentes, de modo que descartar linhas
-incompletas eliminaria uma fatia grande do dataset. Imputar e a escolha melhor. A tabela
-completa por coluna, em contagem absoluta e percentual, sai no output do script.
+incompletas eliminaria uma fatia grande do dataset. Imputar e a escolha melhor. Das
+8693 linhas, **2087 (24.0%)** tem ao menos um campo vazio.
 
-**Media x mediana dos gastos.** A mediana das cinco colunas e **0** enquanto as medias
+| coluna | faltantes | % |
+|---|---|---|
+| `CryoSleep` | 217 | 2.50 |
+| `ShoppingMall` | 208 | 2.39 |
+| `VIP` | 203 | 2.34 |
+| `HomePlanet` | 201 | 2.31 |
+| `Name` | 200 | 2.30 |
+| `Cabin` | 199 | 2.29 |
+| `VRDeck` | 188 | 2.16 |
+| `Spa` | 183 | 2.11 |
+| `FoodCourt` | 183 | 2.11 |
+| `Destination` | 182 | 2.09 |
+| `RoomService` | 181 | 2.08 |
+| `Age` | 179 | 2.06 |
+| `PassengerId` | 0 | 0.00 |
+| `Transported` | 0 | 0.00 |
+
+**Media x mediana dos gastos.**
+
+| coluna | media | mediana | maximo | desvio | % zeros |
+|---|---|---|---|---|---|
+| `RoomService` | 224.69 | 0.0 | 14327.0 | 666.72 | 64.16 |
+| `FoodCourt` | 458.08 | 0.0 | 29813.0 | 1611.49 | 62.76 |
+| `ShoppingMall` | 173.73 | 0.0 | 23492.0 | 604.70 | 64.27 |
+| `Spa` | 311.14 | 0.0 | 22408.0 | 1136.71 | 61.24 |
+| `VRDeck` | 304.85 | 0.0 | 24133.0 | 1145.72 | 63.21 |
+
+A mediana das cinco colunas e **0** enquanto as medias
 ficam na casa das centenas e os maximos na casa das dezenas de milhares. Tres leituras
 decorrem disso. Primeiro, a maioria dos passageiros nao gastou nada — em boa parte sao
 os passageiros em criosono, que nao tem como consumir. Segundo, as distribuicoes sao
@@ -399,6 +426,6 @@ uma pequena melhora.
 | 8  | Explained variance PC1 + PC2 — Dataset I | 0.6597 (PC1 0.5004 + PC2 0.1593) |
 | 9  | Explained variance PC1 + PC2 — Dataset II | 0.4291 (PC1 0.2159 + PC2 0.2132) |
 | 10 | Share of the positive class in `Transported` | 0.5036 |
-| 11 | Mean and median of `FoodCourt` on the training set, before transforming | 452.6112 | 0.000| 
+| 11 | Mean and median of `FoodCourt` on the training set, before transforming | 452.6112 e 0.0000 |
 | 12 | Final `shape` of the training feature matrix | 6954, 17 |
-| 13 | Minimum and maximum of the training and test sets after scaling | -1.0000, 1.0000 | -1.0000, 1.1383 |
+| 13 | Minimum and maximum of the training and test sets after scaling | treino -1.0000, 1.0000 — teste -1.0000, 1.1383 |

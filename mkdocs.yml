@@ -1,8 +1,8 @@
 site_name: Template de Entrega
 site_author: Sandmann, H.
-site_url: https://hsandmann.github.io/documentation.template
-repo_url: https://github.com/hsandmann/documentation.template
-repo_name: github/documentation.template
+site_url: https://lucassatoco.github.io/DLRN_2026.2
+repo_url: https://github.com/lucassatoco/DLRN_2026.2
+repo_name: github/DLRN_2026.2
 
 theme:
   name: material
@@ -110,7 +110,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/documentation.template
+      repository: lucassatoco/DLRN_2026.2
       branch: main
   - search
   - badges
@@ -141,11 +141,5 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - This documentation: ./thisdocumentation/index.md
-  - Roteiros:
-    - Roteiro 1: ./roteiro1/index.md
-    - Roteiro 2: ./roteiro2/index.md
-    - Roteiro 3: ./roteiro3/index.md
-    - Roteiro 4: ./roteiro4/index.md
-    - Notebook 1: ./notebook1/ex1_data.ipynb
-  - Projeto: ./projeto/index.md
+  - Exercises:
+    - Data: exercises/data/index.md

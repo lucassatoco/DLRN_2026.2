@@ -1,5 +1,16 @@
-site/
+__pycache__/
+*.py[cod]
+.venv/
 env/
+site/
 .cache/
 .vscode/
 target/
+.ipynb_checkpoints/
+*.ipynb
+.DS_Store
+Thumbs.db
+
+# O dataset precisa ficar versionado: criterio de nota e os scripts
+# rodarem a partir de um checkout limpo.
+!docs/exercises/data/dataset/train.csv

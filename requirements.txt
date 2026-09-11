@@ -1,4 +1,17 @@
+markdown-grid-tables
+markdown-exec[ansi]
+mkdocs-badges
 mkdocs-material
+mkdocs-material-extensions
+mkdocs-minify-plugin
+mkdocs-glightbox
+mkdocs-git-authors-plugin
+mkdocs-git-committers-plugin-2
+mkdocs-git-revision-date-localized-plugin
+mkdocs-render-swagger-plugin
+mkdocs-jupyter
+termynal
+yfinance
 numpy>=1.24
 pandas>=2.0
 matplotlib>=3.7
