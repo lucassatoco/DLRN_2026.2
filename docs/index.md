@@ -1,100 +1,101 @@
-# Template de Entrega
+# Redes Neurais e Deep Learning
 
+!!! info inline end "Edição"
 
-???+ info inline end "Edição"
+    **2026.2** · Insper
 
-    2025.1
+    Lucas Sato
 
+Portfólio dos exercícios da disciplina de **Artificial Neural Networks and Deep
+Learning**. Cada entrega é um relatório próprio — com o código que a gerou, as figuras
+e os números que sustentam cada afirmação.
 
-## Grupo/Kit X
+O fio condutor não é a ferramenta, é a pergunta que vem antes dela: como os dados estão
+distribuídos, o que a geometria deles já revela sobre a dificuldade do problema, e o que
+precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 
-1. João da Silva
-1. Pedro de Souza
-1. Maria Oliveira
-1. Grupo K
-    - João da Silva
-    - Pedro de Souza
+## Exercícios
 
+<div class="grid cards" markdown>
 
+-   :material-chart-scatter-plot:{ .lg .middle } &nbsp; **1. Data**
 
-!!! tip "Instruções"
+    ---
 
-    Vocês devem utilizar este template como um bloco de notas para registrar o que foi feito e o que falta fazer. Vocês devem adicionar as informações necessárias.
-    O template deve ser editado e atualizado a cada entrega, registrando assim a data de entrega e o que foi feito até o momento via Git.
+    Geometria e espalhamento de nuvens de pontos, não-linearidade em 5 dimensões e
+    pré-processamento do Spaceship Titanic para uma rede com ativação `tanh`.
 
-## Entregas
+    *Três scripts · seis figuras · 13 métricas*
 
-- [x] Roteiro 1 - Data 23/02/2025
-- [ ] Roteiro 2
-- [ ] Roteiro 3
-- [ ] Roteiro 4
-- [ ] Projeto
+    [:octicons-arrow-right-24: Ler o relatório](exercises/data/index.md)
 
-## Diagramas
+-   :material-vector-point:{ .lg .middle } &nbsp; **2. Perceptron**
 
-Use o [Mermaid](https://mermaid.js.org/intro/){:target='_blank'} para criar os diagramas de documentação.
+    ---
 
-[Mermaid Live Editor](https://mermaid.live/){:target='_blank'}
+    O classificador linear mais simples: onde ele funciona, e exatamente onde a
+    fronteira reta deixa de dar conta.
 
+    *A entregar*
 
-``` mermaid
-flowchart TD
-    Deployment:::orange -->|defines| ReplicaSet
-    ReplicaSet -->|manages| pod((Pod))
-    pod:::red -->|runs| Container
-    Deployment -->|scales| pod
-    Deployment -->|updates| pod
+-   :material-graph-outline:{ .lg .middle } &nbsp; **3. MLP**
 
-    Service:::orange -->|exposes| pod
+    ---
 
-    subgraph  
-        ConfigMap:::orange
-        Secret:::orange
-    end
+    Camadas ocultas, retropropagação e o que muda quando a rede ganha capacidade de
+    dobrar o espaço de entrada.
 
-    ConfigMap --> Deployment
-    Secret --> Deployment
-    classDef red fill:#f55
-    classDef orange fill:#ffa500
-```
+    *A entregar*
 
+</div>
 
+## Andamento
 
-## Códigos
+- [x] **Data** — entregue em 10/set/2026
+- [ ] Perceptron
+- [ ] MLP
 
-=== "De um arquivo remoto"
+## Como reproduzir
 
-    ``` { .yaml .copy .select linenums='1' title="main.yaml" }
-    --8<-- "https://raw.githubusercontent.com/hsandmann/documentation.template/refs/heads/main/.github/workflows/main.yaml"
+Todo relatório é reproduzível a partir de um checkout limpo. Os scripts fixam
+`rng = np.random.default_rng(42)` e leem os dados de caminhos relativos ao próprio
+arquivo, então rodam de qualquer lugar.
+
+=== "Rodar os scripts"
+
+    ``` { .bash .copy }
+    git clone https://github.com/lucassatoco/DLRN_2026.2.git
+    cd DLRN_2026.2
+    python -m venv .venv && .venv/Scripts/activate
+    pip install -r requirements.txt
+    cd docs/exercises/data/code
+    python ex1_point_clouds.py
+    python ex2_nonlinearity.py
+    python ex3_preprocessing.py
     ```
 
-=== "Anotações no código"
+=== "Servir o site localmente"
 
-    ``` { .yaml title="compose.yaml" }
-    name: app
-
-        db:
-            image: postgres:17
-            environment:
-                POSTGRES_DB: ${POSTGRES_DB:-projeto} # (1)!
-                POSTGRES_USER: ${POSTGRES_USER:-projeto}
-                POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
-            ports:
-                - 5432:5432 #(2)!
+    ``` { .bash .copy }
+    pip install -r requirements.txt
+    mkdocs serve
     ```
 
-    1.  Caso a variável de ambiente `POSTGRES_DB` não exista ou seja nula - não seja definida no arquivo `.env` - o valor padrão será `projeto`. Vide [documentação](https://docs.docker.com/reference/compose-file/interpolation/){target='_blank'}.
+!!! note "Uso de IA"
 
-    2. Aqui é feito um túnel da porta 5432 do container do banco de dados para a porta 5432 do host (no caso localhost). Em um ambiente de produção, essa porta não deve ser exposta, pois ninguém de fora do compose deveria acessar o banco de dados diretamente.
+    O uso de IA está declarado no front matter de cada relatório, no campo `ai_use`,
+    como a disciplina exige. Colaboração é permitida; não declarar é o que gera
+    problema.
 
+## Ferramentas
 
-## Exemplo de vídeo
+`numpy` · `pandas` · `matplotlib` · `scikit-learn` — esta última apenas para PCA e
+pré-processamento. Nenhum modelo é treinado no exercício de Data.
 
-Lorem ipsum dolor sit amet
+Site construído com [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){:target='_blank'}
+e publicado via GitHub Pages.
 
-<iframe width="100%" height="470" src="https://www.youtube.com/embed/3574AYQml8w" allowfullscreen></iframe>
+---
 
-
-## Referências
-
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/){:target='_blank'}
+[:octicons-mark-github-16: Repositório](https://github.com/lucassatoco/DLRN_2026.2){:target='_blank'} ·
+[:octicons-book-16: Enunciados da disciplina](https://insper.github.io/ann-dl/2026.2/){:target='_blank'}
