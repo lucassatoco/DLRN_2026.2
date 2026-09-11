@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/exercises/data/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/exercises/data/code/Data_Lucas_Sato/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/exercises/data/code/ex1_point_clouds/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/exercises/data/code/ex2_nonlinearity/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+    <url>
+         <loc>https://lucassatoco.github.io/DLRN_2026.2/exercises/data/code/ex3_preprocessing/</loc>
+         <lastmod>2026-09-11</lastmod>
+    </url>
+</urlset>
