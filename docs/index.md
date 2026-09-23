@@ -33,8 +33,8 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 
     ---
 
-    O classificador linear mais simples: onde ele funciona, e exatamente onde a
-    fronteira reta deixa de dar conta — e o *pocket* que salva o melhor dela.
+    Perceptron implementado do zero: converge quando os dados são separáveis e
+    fica oscilando quando se sobrepõem, que é onde entra o *pocket*.
 
     *Perceptron em NumPy · seis figuras · 8 métricas*
 
