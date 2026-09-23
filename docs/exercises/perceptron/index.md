@@ -1,6 +1,6 @@
 ---
 exercise: perceptron
-ai_use: "Claude (Claude Code) implementou o perceptron, os scripts e o notebook e redigiu a primeira versao das analises a partir do enunciado; a revisao do codigo, dos numeros e do texto final e minha."
+ai_use: "Claude (Claude Code) para revisao do codigo, elaboracao dos textos e montagem do GitHub Pages."
 ---
 
 # Exercise 2 — Perceptron
