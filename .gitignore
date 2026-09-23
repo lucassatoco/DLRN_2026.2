@@ -16,3 +16,6 @@ Thumbs.db
 !docs/exercises/data/dataset/train.csv
 
 .claude/
+
+# O notebook da entrega Perceptron e parte do relatorio.
+!docs/exercises/perceptron/code/perceptron_notebook.ipynb

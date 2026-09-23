@@ -34,9 +34,11 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
     ---
 
     O classificador linear mais simples: onde ele funciona, e exatamente onde a
-    fronteira reta deixa de dar conta.
+    fronteira reta deixa de dar conta — e o *pocket* que salva o melhor dela.
 
-    *A entregar*
+    *Perceptron em NumPy · seis figuras · 8 métricas*
+
+    [:octicons-arrow-right-24: Ler o relatório](exercises/perceptron/index.md)
 
 -   :material-graph-outline:{ .lg .middle } &nbsp; **3. MLP**
 
@@ -52,7 +54,7 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 ## Andamento
 
 - [x] **Data** — entregue em 10/set/2026
-- [ ] Perceptron
+- [x] **Perceptron** — entregue em 22/set/2026
 - [ ] MLP
 
 ## Como reproduzir
@@ -72,6 +74,9 @@ arquivo, então rodam de qualquer lugar.
     python ex1_point_clouds.py
     python ex2_nonlinearity.py
     python ex3_preprocessing.py
+    cd ../../perceptron/code
+    python ex1_separable.py
+    python ex2_overlapping.py
     ```
 
 === "Servir o site localmente"
@@ -90,7 +95,8 @@ arquivo, então rodam de qualquer lugar.
 ## Ferramentas
 
 `numpy` · `pandas` · `matplotlib` · `scikit-learn` — esta última apenas para PCA e
-pré-processamento. Nenhum modelo é treinado no exercício de Data.
+pré-processamento no exercício de Data. O perceptron é escrito do zero em NumPy, sem
+nenhum modelo pronto.
 
 Site construído com [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){:target='_blank'}
 e publicado via GitHub Pages.
