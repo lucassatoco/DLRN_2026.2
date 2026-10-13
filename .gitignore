@@ -19,3 +19,6 @@ Thumbs.db
 
 # O notebook da entrega Perceptron e parte do relatorio.
 !docs/exercises/perceptron/code/perceptron_notebook.ipynb
+
+# O notebook da entrega MLP e parte do relatorio.
+!docs/exercises/mlp/code/mlp_notebook.ipynb

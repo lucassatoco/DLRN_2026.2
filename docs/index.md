@@ -44,10 +44,12 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 
     ---
 
-    Camadas ocultas, retropropagação e o que muda quando a rede ganha capacidade de
-    dobrar o espaço de entrada.
+    MLP implementado do zero: backpropagation à mão, um problema que uma reta não
+    resolve, três classes com softmax e o teste de uma segunda camada oculta.
 
-    *A entregar*
+    *MLP em NumPy · seis figuras · 9 métricas*
+
+    [:octicons-arrow-right-24: Ler o relatório](exercises/mlp/index.md)
 
 </div>
 
@@ -55,7 +57,7 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 
 - [x] **Data** — entregue em 10/set/2026
 - [x] **Perceptron** — entregue em 22/set/2026
-- [ ] MLP
+- [x] **MLP** — entregue em 13/out/2026
 
 ## Como reproduzir
 
@@ -77,6 +79,10 @@ arquivo, então rodam de qualquer lugar.
     cd ../../perceptron/code
     python ex1_separable.py
     python ex2_overlapping.py
+    cd ../../mlp/code
+    python ex2_binary.py
+    python ex3_multiclass.py
+    python ex4_depth.py
     ```
 
 === "Servir o site localmente"
