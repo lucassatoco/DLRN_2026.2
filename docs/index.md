@@ -101,8 +101,9 @@ arquivo, então rodam de qualquer lugar.
 ## Ferramentas
 
 `numpy` · `pandas` · `matplotlib` · `scikit-learn` — esta última apenas para PCA e
-pré-processamento no exercício de Data. O perceptron é escrito do zero em NumPy, sem
-nenhum modelo pronto.
+pré-processamento no exercício de Data e, no MLP, para gerar os dados, dividir treino e
+teste, a matriz de confusão e as baselines de regressão logística. O perceptron e o MLP
+são escritos do zero em NumPy, sem nenhum modelo pronto.
 
 Site construído com [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){:target='_blank'}
 e publicado via GitHub Pages.
