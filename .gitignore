@@ -22,3 +22,9 @@ Thumbs.db
 
 # O notebook da entrega MLP e parte do relatorio.
 !docs/exercises/mlp/code/mlp_notebook.ipynb
+
+# O notebook da entrega VAE e parte do relatorio.
+!docs/exercises/vae/code/vae_notebook.ipynb
+
+# MNIST e modelos salvos: os scripts baixam e treinam de novo.
+docs/exercises/vae/code/data/
