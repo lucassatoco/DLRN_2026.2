@@ -51,6 +51,17 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 
     [:octicons-arrow-right-24: Ler o relatório](exercises/mlp/index.md)
 
+-   :material-blur:{ .lg .middle } &nbsp; **4. VAE**
+
+    ---
+
+    VAE no MNIST com os dois termos da perda medidos separadamente e um espaço latente
+    de duas dimensões, desenhado para medir o que se perde ao comprimir cada imagem.
+
+    *VAE em PyTorch · seis figuras · 4 métricas*
+
+    [:octicons-arrow-right-24: Ler o relatório](exercises/vae/index.md)
+
 </div>
 
 ## Andamento
@@ -58,12 +69,14 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 - [x] **Data** — entregue em 10/set/2026
 - [x] **Perceptron** — entregue em 22/set/2026
 - [x] **MLP** — entregue em 13/out/2026
+- [x] **VAE** — entregue em 03/nov/2026
 
 ## Como reproduzir
 
 Todo relatório é reproduzível a partir de um checkout limpo. Os scripts fixam
-`rng = np.random.default_rng(42)` e leem os dados de caminhos relativos ao próprio
-arquivo, então rodam de qualquer lugar.
+`rng = np.random.default_rng(42)` (no VAE, `torch.manual_seed(42)`) e leem os dados de
+caminhos relativos ao próprio arquivo, então rodam de qualquer lugar. O MNIST é baixado
+pelo próprio script do VAE na primeira execução.
 
 === "Rodar os scripts"
 
@@ -83,6 +96,9 @@ arquivo, então rodam de qualquer lugar.
     python ex2_binary.py
     python ex3_multiclass.py
     python ex4_depth.py
+    cd ../../vae/code
+    python ex1_mnist.py
+    python ex2_latent2d.py
     ```
 
 === "Servir o site localmente"
@@ -103,7 +119,9 @@ arquivo, então rodam de qualquer lugar.
 `numpy` · `pandas` · `matplotlib` · `scikit-learn` — esta última apenas para PCA e
 pré-processamento no exercício de Data e, no MLP, para gerar os dados, dividir treino e
 teste, a matriz de confusão e as baselines de regressão logística. O perceptron e o MLP
-são escritos do zero em NumPy, sem nenhum modelo pronto.
+são escritos do zero em NumPy, sem nenhum modelo pronto. No VAE uso `torch` e `torchvision`
+(o enunciado libera o autograd), mas a reparametrização, os dois termos da perda e a
+amostragem são escritos à mão; `scipy` entra só para a inversa da CDF normal.
 
 Site construído com [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){:target='_blank'}
 e publicado via GitHub Pages.

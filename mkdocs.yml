@@ -139,9 +139,14 @@ extra_javascript:
   # Para a implementação do mkdocs-jupyter
   - javascripts/mathjax.js
 
+# O MNIST e os modelos salvos pelos scripts do VAE ficam fora do site
+exclude_docs: |
+  exercises/vae/code/data/
+
 nav:
   - Home: index.md
   - Exercises:
     - Data: exercises/data/index.md
     - Perceptron: exercises/perceptron/index.md
     - MLP: exercises/mlp/index.md
+    - VAE: exercises/vae/index.md
