@@ -69,7 +69,7 @@ precisa acontecer com eles antes de uma rede conseguir aprender qualquer coisa.
 - [x] **Data** — entregue em 10/set/2026
 - [x] **Perceptron** — entregue em 22/set/2026
 - [x] **MLP** — entregue em 13/out/2026
-- [x] **VAE** — entregue em 03/nov/2026
+- [x] **VAE** — entregue em 04/nov/2026
 
 ## Como reproduzir
 
