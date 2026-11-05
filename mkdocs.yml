@@ -130,14 +130,12 @@ plugins:
       allow_errors: false
 
 extra_javascript:
-  - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # Configuração do MathJax antes da biblioteca, e uma versão só (a 3), fixada:
+  # o link sem versão do unpkg passou a servir o MathJax 4, que não renderiza com esta configuração
+  - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
-
-  # Para a implementação do mkdocs-jupyter
-  - javascripts/mathjax.js
 
 # O MNIST e os modelos salvos pelos scripts do VAE ficam fora do site
 exclude_docs: |
